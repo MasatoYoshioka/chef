@@ -2,7 +2,11 @@
 	"nginx" : { 
 		"port" :80
 	},
+	"php-fpm" : {
+		"user" : "www",
+		"group" : "www"
+	},
 	"run_list" : [
-		"nginx","php"
+		"users","nginx","php","php-fpm"
 	]
 }
